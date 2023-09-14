@@ -4,7 +4,7 @@ const slugify = require('slugify');
 const PersonSchema = new mongoose.Schema({
     name: {
         type: String,
-        required: [true, 'Please add a name']
+        required: [true, 'Please add a name'] 
     },
     slug: String,
     role: {
@@ -24,10 +24,10 @@ const PersonSchema = new mongoose.Schema({
         required: [true, "Please, add your occupation"]
     },
     annualSalary: {
-        type: Number
+        type: String
     },
     monthlySalary: {
-        type: Number
+        type: String
     }
 });
 

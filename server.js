@@ -7,11 +7,26 @@ const errorHandler = require('./utils/errorHandler');
 
 //Load Env Vars
 dotenv.config({path: './config/.env'});
+
+// Datebase connection
 connectDB()
+
+// Load route files
+const persons = require('./person.route');
 
 const app = express()
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 5000;
+
+app.use(express.json({ limit: '50mb' }));
+app.use(express.urlencoded({ limit: '50mb', extended: false }));
+
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+
+app.use(cors());
+
+app.use('/api', persons)
 
 app.use(errorHandler)
 
