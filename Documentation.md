@@ -1,7 +1,7 @@
 ## Create a Person
 
 ### Route
-http://localhost:5000/api
+http://myperson/api
 
 ### An API Endpoint to Create a Person Resource
 
@@ -58,7 +58,7 @@ None
  ```
 
  ### Body
-
+```
  {
     "name": "Bode Brook",
     "state": "Ogun State",
@@ -67,12 +67,12 @@ None
     "annualSalary": "6000000",
     "monthlySalary": "500000"
 }
-
+```
 
 ## Get Persons
 
 ### Route
-http://localhost:5000/api
+http://myperson/api
 
 ### API Endpoint to Get Persons from the Database
 > This process invokes a method that gets all persons in the database.
@@ -189,7 +189,7 @@ None
 
 ## Get One Person
 ### Route
-http://localhost:5000/api/65022f877c2527bfb2ac09b8
+http://myperson/api/65022f877c2527bfb2ac09b8
 
 ### API Endpoint for Getting a User
 
@@ -241,7 +241,7 @@ None
 
  ## Update a Person
  ### Route: 
- http://localhost:5000/api/65022f877c2527bfb2ac09b8
+ http://myperson/api/65022f877c2527bfb2ac09b8
 
  ### API Endpoint to Update a Person
 
@@ -294,8 +294,8 @@ None
  ## Delete a Person
 
 ### Route
-http://localhost:5000/api/6503398480ea6d42863e74ee
-### API Endpoint to Update a Person
+http://myperson/api/6503398480ea6d42863e74ee
+### API Endpoint to Delete a Person
 
 > This process invokes a method that delete a specific user. 
   
